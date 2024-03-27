@@ -13,13 +13,13 @@ Ce programme en C++ permet de calculer les informations sur les sous-réseaux IP
 Pour utiliser le programme, suivez ces étapes :
 
 1. Clonez ce dépôt sur votre machine locale.
-4. Exécutez le programme en spécifiant l'adresse IP et la notation CIDR en ligne de commande.
-
-   Exemple d'utilisation :
-
-```bash
-./subnet_calculator -ip 192.168.1.1 -cidr 24
-```
+   ```bash
+   git clone https://github.com/ThunderDZNGITH/SubnetCLI
+   ```
+2. Exécutez le programme en spécifiant l'adresse IP et la notation CIDR en ligne de commande.
+   ```bash
+   ./subnet_calculator -ip 192.168.1.1 -cidr 24
+   ```
 
 ## Compilation
 
