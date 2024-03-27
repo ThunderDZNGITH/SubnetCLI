@@ -31,7 +31,7 @@ Pour utiliser le programme, suivez ces étapes :
    ```bash
    chmod 777 run.sh
    ```
-3. Lancez le script de compilation
+3. Lancez le script de compilation (avec les droits administrateur !!)
    ```bash
    ./run.sh
    ```
