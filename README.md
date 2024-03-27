@@ -18,7 +18,7 @@ Pour utiliser le programme, suivez ces étapes :
    ```
 2. Exécutez le programme en spécifiant l'adresse IP et la notation CIDR en ligne de commande.
    ```bash
-   ./subnet_calculator -ip 192.168.1.1 -cidr 24
+   ./subnetcli -ip 192.168.1.1 -cidr 24
    ```
 
 ## Compilation
