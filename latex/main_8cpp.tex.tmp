@@ -1,0 +1,110 @@
+\hypertarget{main_8cpp}{}\doxysection{Référence du fichier main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+Graphe des dépendances par inclusion de main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{main_8cpp_a508a43511dfd5f3c851f32592e154884}{ip\+To\+Binary}} (string ip)
+\begin{DoxyCompactList}\small\item\em Convertit une adresse IP en binaire. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{main_8cpp_a10955556d943668c944a1eaf14e0ceb2}{calculate\+Hosts}} (int prefix\+Length)
+\begin{DoxyCompactList}\small\item\em Calcule le nombre d\textquotesingle{}hôtes possibles dans un sous-\/réseau. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{main_8cpp_af3c04b2cb73f8e87b3de03086829e837}{get\+Subnets}} (string ip, int prefix\+Length)
+\begin{DoxyCompactList}\small\item\em Obtient la liste des sous-\/réseaux disponibles. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction principale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{main_8cpp_a10955556d943668c944a1eaf14e0ceb2}\label{main_8cpp_a10955556d943668c944a1eaf14e0ceb2}} 
+\index{main.cpp@{main.cpp}!calculateHosts@{calculateHosts}}
+\index{calculateHosts@{calculateHosts}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{calculateHosts()}{calculateHosts()}}
+{\footnotesize\ttfamily unsigned int calculate\+Hosts (\begin{DoxyParamCaption}\item[{int}]{prefix\+Length }\end{DoxyParamCaption})}
+
+
+
+Calcule le nombre d\textquotesingle{}hôtes possibles dans un sous-\/réseau. 
+
+Cette fonction prend la longueur du préfixe de sous-\/réseau en entrée et retourne le nombre d\textquotesingle{}hôtes possibles dans ce sous-\/réseau.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em prefix\+Length} & La longueur du préfixe de sous-\/réseau. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le nombre d\textquotesingle{}hôtes possibles. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_af3c04b2cb73f8e87b3de03086829e837}\label{main_8cpp_af3c04b2cb73f8e87b3de03086829e837}} 
+\index{main.cpp@{main.cpp}!getSubnets@{getSubnets}}
+\index{getSubnets@{getSubnets}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{getSubnets()}{getSubnets()}}
+{\footnotesize\ttfamily vector$<$string$>$ get\+Subnets (\begin{DoxyParamCaption}\item[{string}]{ip,  }\item[{int}]{prefix\+Length }\end{DoxyParamCaption})}
+
+
+
+Obtient la liste des sous-\/réseaux disponibles. 
+
+Cette fonction prend une adresse IP de base et la longueur du préfixe de sous-\/réseau en entrée. Elle retourne la liste des sous-\/réseaux disponibles dans le format \char`\"{}adresse de réseau -\/ première adresse -\/ dernière adresse\char`\"{}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ip} & L\textquotesingle{}adresse IP de base. \\
+\hline
+{\em prefix\+Length} & La longueur du préfixe de sous-\/réseau. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La liste des sous-\/réseaux disponibles. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a508a43511dfd5f3c851f32592e154884}\label{main_8cpp_a508a43511dfd5f3c851f32592e154884}} 
+\index{main.cpp@{main.cpp}!ipToBinary@{ipToBinary}}
+\index{ipToBinary@{ipToBinary}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ipToBinary()}{ipToBinary()}}
+{\footnotesize\ttfamily string ip\+To\+Binary (\begin{DoxyParamCaption}\item[{string}]{ip }\end{DoxyParamCaption})}
+
+
+
+Convertit une adresse IP en binaire. 
+
+Cette fonction prend une adresse IP au format string en entrée et retourne son équivalent binaire sous forme de string.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ip} & L\textquotesingle{}adresse IP à convertir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}adresse IP en binaire. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction principale. 
+
+Cette fonction gère les arguments de la ligne de commande, effectue les calculs nécessaires et affiche les informations sur le réseau.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & Nombre d\textquotesingle{}arguments de la ligne de commande. \\
+\hline
+{\em argv} & Tableau d\textquotesingle{}arguments de la ligne de commande. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 en cas de succès, 1 en cas d\textquotesingle{}erreur. 
+\end{DoxyReturn}
