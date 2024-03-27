@@ -1,2 +1,2 @@
-gcc -o main main.cpp -lstdc++ -lm
-./main
+gcc -o subnetcli main.cpp -lstdc++ -lm
+./subnetcli
